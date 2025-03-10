@@ -1,8 +1,11 @@
 # React Image Carousel
 
-A modern, feature-rich image carousel component for React applications with TypeScript support.
+A modern, feature-rich image carousel component for React applications with smooth transitions, touch support, and customizable navigation.
 
-## Features 🌟
+![Demo](../Downloads/image.gif)
+
+
+## ✨ Features
 
 - 🖼️ **Multiple Transition Effects**
   - Smooth sliding
@@ -37,20 +40,18 @@ A modern, feature-rich image carousel component for React applications with Type
   - Screen reader support
   - Focus management
 
-## Installation 📦
+## 🚀 Quick Start
 
 ```bash
-npm i @meetdhanani/react-image-carousel
+npm install react-image-carousel
 # or
-yarn add  @meetdhanani/react-image-carousel
+yarn add react-image-carousel
 ```
 
-## Quick Start 🚀
-
-```jsx
+```tsx
 import { ImageCarousel } from 'react-image-carousel';
 
-function App() {
+const App = () => {
   const images = [
     'https://example.com/image1.jpg',
     'https://example.com/image2.jpg',
@@ -64,12 +65,83 @@ function App() {
       interval={3000}
       showArrows={true}
       showDots={true}
+      transitionStyle="smooth"
     />
   );
-}
+};
 ```
 
-## Props Documentation 📝
+## 📦 Requirements
+
+- React 18 or higher
+- TypeScript 4.5 or higher
+- Modern browser with CSS Grid and CSS Transitions support
+
+## 🔧 Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Run tests
+npm test
+```
+
+## 🌐 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Opera (latest)
+
+## 🔄 React 19 Support
+
+This component is fully compatible with React 19 and its new features:
+
+- Uses the new JSX transform
+- Compatible with React 19's automatic batching
+- Supports React 19's concurrent features
+- Optimized for React 19's performance improvements
+
+### React 19 Specific Features
+
+```tsx
+// Example of using React 19's automatic batching
+const App = () => {
+  const [count, setCount] = useState(0);
+  
+  const handleSlideChange = (index: number) => {
+    // These updates will be batched automatically in React 19
+    setCount(prev => prev + 1);
+    setCurrentSlide(index);
+  };
+
+  return (
+    <ImageCarousel
+      images={images}
+      onSlideChange={handleSlideChange}
+    />
+  );
+};
+```
+
+### Performance Optimizations
+
+The component takes advantage of React 19's performance improvements:
+
+- Uses `useCallback` for memoized functions
+- Implements `useMemo` for expensive computations
+- Leverages React 19's improved Suspense support
+- Optimized for concurrent rendering
+
+## 📖 Props
 
 ### Basic Props
 
@@ -244,17 +316,6 @@ The carousel is fully responsive and adapts to different screen sizes. You can u
 />
 ```
 
-## Browser Support 🌐
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Opera (latest)
-
-## Contributing 🤝
-
-Contributions are welcome! Please feel free to submit a Pull Request.
 ## License 📄
 
 MIT License - feel free to use this component in your projects! 
