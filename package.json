@@ -1,8 +1,14 @@
 {
-  "name": "react-image-carousel",
+  "name": "@meetdhanani/react-image-carousel",
   "version": "1.0.0",
   "description": "A modern React Image Carousel component with smooth transitions and touch support",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://https://github.com/meetdhanani88/react-image-carousel"
+  },
+  "homepage": "https://github.com/meetdhanani88//react-image-carousel#readme",
+
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
