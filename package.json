@@ -1,6 +1,6 @@
 {
   "name": "@meetdhanani/react-image-carousel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A modern React Image Carousel component with smooth transitions and touch support",
   "type": "module",
   "repository": {
