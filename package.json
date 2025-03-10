@@ -1,0 +1,44 @@
+{
+  "name": "react-image-carousel",
+  "version": "1.0.0",
+  "description": "A modern React Image Carousel component with smooth transitions and touch support",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "carousel",
+    "image-carousel",
+    "slider",
+    "component"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^20.11.19",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "rollup": "^4.9.6",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  }
+}
