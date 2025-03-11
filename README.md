@@ -44,9 +44,9 @@ A modern, feature-rich image carousel component for React applications with smoo
 ## 🚀 Quick Start
 
 ```bash
-npm install react-image-carousel
+npm i @meetdhanani/react-image-carousel
 # or
-yarn add react-image-carousel
+yarn add @meetdhanani/react-image-carousel
 ```
 
 ```tsx
