@@ -2,8 +2,6 @@
 
 A modern, feature-rich image carousel component for React applications with smooth transitions, touch support, and customizable navigation.
 
-![image (1)](https://github.com/user-attachments/assets/c0126a83-4570-4b43-b8c6-fe7f6af5d3ea)
-
 
 
 ## ✨ Features
@@ -44,13 +42,13 @@ A modern, feature-rich image carousel component for React applications with smoo
 ## 🚀 Quick Start
 
 ```bash
-npm i @meetdhanani/react-image-carousel
+npm install react-image-carousel
 # or
-yarn add @meetdhanani/react-image-carousel
+yarn add react-image-carousel
 ```
 
 ```tsx
-import { ImageCarousel } from '@meetdhanani/react-image-carousel';
+import { ImageCarousel } from 'react-image-carousel';
 
 const App = () => {
   const images = [

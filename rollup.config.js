@@ -3,16 +3,20 @@ import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import postcss from 'rollup-plugin-postcss';
 
-const isProduction = process.env.NODE_ENV === 'production';
-console.log(isProduction,"dhkjkhj")
-
 export default {
   input: 'src/index.ts',
-  output: {
-    file: 'dist/index.esm.js',
-    format: 'esm',
-    sourcemap: !isProduction,
-  },
+  output: [
+    {
+      file: 'dist/index.js',
+      format: 'cjs',
+      sourcemap: true,
+    },
+    {
+      file: 'dist/index.esm.js',
+      format: 'esm',
+      sourcemap: true,
+    },
+  ],
   external: ['react', 'react-dom'],
   watch: {
     include: 'src/**',
@@ -24,13 +28,13 @@ export default {
     commonjs(),
     typescript({
       tsconfig: './tsconfig.json',
-      sourceMap: !isProduction,
-      inlineSources: !isProduction,
+      sourceMap: true,
+      inlineSources: true,
     }),
     postcss({
       modules: false,
       use: ['sass'],
-      sourceMap: !isProduction,
+      sourceMap: true,
       inject: true,
     }),
   ],
