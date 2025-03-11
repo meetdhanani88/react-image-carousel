@@ -50,7 +50,7 @@ yarn add @meetdhanani/react-image-carousel
 ```
 
 ```tsx
-import { ImageCarousel } from 'react-image-carousel';
+import { ImageCarousel } from '@meetdhanani/react-image-carousel';
 
 const App = () => {
   const images = [
