@@ -70,12 +70,6 @@ const App = () => {
 };
 ```
 
-## 📦 Requirements
-
-- React 18 or higher
-- TypeScript 4.5 or higher
-- Modern browser with CSS Grid and CSS Transitions support
-
 ## 🔧 Development
 
 ```bash
